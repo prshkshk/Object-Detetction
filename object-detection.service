@@ -1,0 +1,10 @@
+[Unit]
+Description=Object Detection
+After=syslog.target network.target auditd.service
+
+[Service]
+ExecStart=/opt/object_detection/main.py
+ExecStop=/bin/kill -TERM $MAINPID
+
+[Install]
+WantedBy=multi-user.target
