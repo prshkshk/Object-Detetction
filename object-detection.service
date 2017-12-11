@@ -3,7 +3,7 @@ Description=Object Detection
 After=syslog.target network.target auditd.service
 
 [Service]
-ExecStart=/opt/object_detection/main.py
+ExecStart=/opt/Object-Detetction/main.py
 ExecStop=/bin/kill -TERM $MAINPID
 
 [Install]
